@@ -28,13 +28,12 @@ function DiceGame() {
 
   setDiceResult(randomNumber);
 
-  if (guessNumber === randomNumber) {
-    setMessage("It's a tie.");
-  } else if (guessNumber < randomNumber) {
-    setMessage("Sorry, you lost. The dice was higher.");
-  } else {
-    setMessage("Good job! You won.");
-  }
+ if (guessNumber === randomNumber) {
+  setMessage("Correct! You guessed the dice.");
+  setScore(score + 1);
+} else {
+  setMessage("Wrong guess. Try again.");
+}
 }
   
 
@@ -49,7 +48,7 @@ function DiceGame() {
       <h1>Dice Roll Game</h1>
 
       <p>Click the button to roll the dice.</p>
-      <p>Enter a number from 1 to 6. If your number is bigger than the dice, you win.</p>
+      <p>Enter a number from 1 to 6. If your number is the same as dice, you win.</p>
 
       <h2>Dice result: {diceResult}</h2>
 
