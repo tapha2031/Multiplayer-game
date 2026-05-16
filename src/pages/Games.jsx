@@ -26,12 +26,17 @@ function Games() {
         <GameCard
         title="Math Quiz"
         description="Calculate and find the sum."
-        path="/games/mathquiz"
+        path="/games/math-quiz"
         />
         <GameCard
         title="Reaction Time"
         description="How fast are you?."
-        path="/games/reactiontime"
+        path="/games/reaction-time"
+        />
+        <GameCard
+        title="Coin flip"
+        description="Want to flip a coin?."
+        path="/games/coin-toss"
         />
       </div>
     </section>

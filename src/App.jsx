@@ -25,9 +25,9 @@ function App() {
         <Route path="/games/guess-number" element={<GuessNumber/>} />
         <Route path="/games/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/games/dice-game" element={<DiceGame/>} />
-        <Route path="/games/cointoss" element={<CoinToss/>} />
-        <Route path="/games/mathQuiz" element={<MathQuiz/>} />
-        <Route path="/games/reactionTime" element={<Reactiontime/>} />
+        <Route path="/games/coin-toss" element={<CoinToss/>} />
+        <Route path="/games/math-quiz" element={<MathQuiz/>} />
+        <Route path="/games/reaction-time" element={<Reactiontime/>} />
       
         <Route path="*" element={<NotFound />} />
         
