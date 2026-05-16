@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Dice from "../assets/dicegame.png";
 import numberGuess from "../assets/guessthenum.png";
 import RockPaperScissors from "../assets/paper-rock-scissors.avif";
-import Cointoss from "../assets/Cointoss.png";
+import Cointoss from "../assets/cointoss.png";
 import mathQuiz from "../assets/mathquiz.png";
 import reactionTime from "../assets/reactiontime.webp";
 
