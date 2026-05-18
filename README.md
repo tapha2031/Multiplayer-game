@@ -1,16 +1,27 @@
-# React + Vite
+# About my project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## JavaScript and React Concepts Used
 
-Currently, two official plugins are available:
+### React Components
+The project uses React components to separate the application into smaller parts. For example, the Navbar, GameCard, Home page, Games page, and each game are built as separate components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### useState
+I used `useState` to store and update values that change during the game, such as the player score, computer score, messages, user input, random numbers, dice results, quiz answers, and reaction time.
 
-## React Compiler
+### Event Handling
+The project uses events like `onClick` and `onChange`. `onClick` is used when the user clicks buttons, and `onChange` is used when the user types in an input field.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Conditional Logic
+I used `if`, `else if`, and `else` statements to decide the result of each game. For example, the app checks if the user wins, loses, draws, enters a wrong answer, or gives invalid input.
 
-## Expanding the ESLint configuration
+### Random Values
+The games use `Math.random()` and `Math.floor()` to generate random values. This is used for dice rolls, coin tosses, computer choices, secret numbers, and math quiz questions.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### React Router
+React Router is used to create multiple pages in the app. It allows navigation between the Home page, Games page, About page, and each game page without reloading the browser.
+
+### setTimeout
+The Reaction Time game uses `setTimeout` to wait for a random amount of time before showing the “CLICK NOW!” message.
+
+### Environment Variables
+The project uses a `.env` file to store environment variables such as the application name and author name. These variables are accessed using `import.meta.env` in React.
